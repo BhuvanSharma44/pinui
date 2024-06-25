@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*  */
+/* 
+<!-- image container -->
+       
+      <div
+        class="image-box md:mt-3 mx-auto xl:max-w-[99%] lg:max-w-[92%] md:max-w-[88%] p-2"
+      >
+        <!-- image box -->
+        <div
+          class="bg-rose-400 columns-2 gap-3 w-full image-box md:columns-3 lg:columns-4 xl:columns-5 overflow-hidden"
+        >
+          <div class="">
+            <div class="relative group break-inside-avoid w-64">
+              <a href="#">
+                <img src="img/16.jpg" alt="" class="rounded-md" />
+              </a>
+              <!-- overlay -->
+              <div
+                class="absolute top-36 bottom-0 left-0 right-0 px-4 bg-black rounded-b-md bg-opacity-40 opacity-0 group-hover:opacity-100 duration-300"
+              >
+                <div class="w-full text-white">
+                  <div class="flex items-start justify-between">
+                    <p class="">Image name</p>
+                    <p class="">Image likes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- description box-->
+            <div class="mt-2 flex items-center gap-2 break-before-avoid">
+              <!-- icon -->
+              <div class="">
+                <ion-icon
+                  name="person-circle-sharp"
+                  class="text-3xl text-gray-500"
+                ></ion-icon>
+              </div>
+              <!-- name -->
+              <div class="">
+                <p class="text-md font-mono">User name</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+*/

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- global container -->
+    <div class="">
+      <!-- NAVIGATION Desktop-->
+      <div class="bg-white w-full fixed top-0 z-40">
+        <header class="min-h-16 hidden md:block w-full">
+          <nav class="flex items-center justify-between p-6">
+            <!-- LOGO -->
+            <a href="#">
+              <img
+                src="img/transparentlogo.png"
+                alt=""
+                class="w-12 hover:bg-gray-300 p-2 rounded-full"
+            /></a>
+            <div class="">
+              <a
+                href=""
+                class="font-bold lg:bg-black lg:text-white py-3 px-6 rounded-full"
+                >Home</a
+              >
+            </div>
+            <div class="">
+              <a href="" class="font-bold md:hidden lg:block">Explore</a>
+            </div>
+            <div class="">
+              <a href="" class="font-bold md:hidden lg:block">Create</a>
+            </div>
+
+            <!-- input feild -->
+
+            <div
+              class="relative flex items-center bg-gray-200 p-3 w-[66%] xl:w-2/3 rounded-full focus-within:shadow-3xl hover:bg-gray-300 lg:w-2/5"
+            >
+              <!-- icon -->
+              <ion-icon
+                name="search"
+                class="text-2xl text-gray-400 font-bold"
+              ></ion-icon>
+              <input
+                type="text"
+                placeholder="Search"
+                class="w-full bg-transparent px-2 border-none outline-none"
+              />
+              <!-- bg-transparent rounded-full h-8 w-full px-5 py-4 border-none outline-none -->
+            </div>
+            <!-- text feild -->
+            <div
+              class="absolute w-1/2 h-2/4 rounded-b-xl bg-white top-24 left-60 lg:h-3/4 lg:w-3/4 lg:left-[15rem] hidden"
+            >
+              <!-- <span class="inline-block mx-4 mt-4">Text</span> -->
+            </div>
+
+            <!-- icons -->
+            <div class="mt-2 group">
+              <a href="font-bold"
+                ><ion-icon
+                  name="notifications"
+                  class="relative text-4xl text-gray-500 hover:bg-gray-300 p-2 rounded-full"
+                ></ion-icon
+              ></a>
+            </div>
+
+            <!-- second icon -->
+            <div class="">
+              <a href="font-bold"
+                ><ion-icon
+                  name="chatbubble-ellipses-sharp"
+                  class="text-4xl text-gray-500 hover:bg-gray-300 p-2 rounded-full"
+                ></ion-icon
+              ></a>
+            </div>
+
+            <!-- third icon -->
+            <div class="">
+              <a href="font-bold"
+                ><ion-icon
+                  name="person-circle-sharp"
+                  class="text-4xl text-gray-500 hover:bg-gray-300 p-2 rounded-full"
+                ></ion-icon
+              ></a>
+            </div>
+          </nav>
+
+          <!-- covering -->
+          <div class="">
+            <!-- overlay -->
+            <div class="bg-black/50 w-full h-screen hidden"></div>
+            <!-- search options -->
+            <div class=""></div>
+          </div>
+        </header>
+        <!-- image -->
+      </div>
+
+      <section id="explore" class="md:mt-32 py-5 max-h-screen">
+        <!-- Image box and content -->
+        <div class="">
+          <!-- heading -->
+          <div class="w-3/4 mx-auto lg:mt-10">
+            <p class="text-3xl font-bold text-center lg:text-5xl">
+              Explore the best of Pinterest
+            </p>
+          </div>
+
+          <!-- Images-container -->
+          <div
+            class="flex flex-col md:mt-10 md:flex-row w-3/4 md:w-full mx-auto py-10 space-y-4 md:px-2 md:space-y-0 md:space-x-2 lg:w-full xl:w-5/6 lg:mt-30"
+          >
+            <!-- Image one -->
+            <div class="relative w-full h-40 md:h-72 rounded-lg group">
+              <img
+                src="img/explore-1.jpg"
+                alt=""
+                class="w-full object-cover h-full rounded-lg"
+              />
+              <!-- content -->
+              <div
+                class="absolute top-0 rounded-lg bg-black/50 w-full h-full text-white md:p-9 md:pt-20 lg:pt-32 lg:p-0 lg:px-8 group-hover:bg-black/70 cursor-pointer"
+              >
+                <p
+                  class="p-4 text-3xl capitalize font-medium md:p-0 lg:text-2xl xl:text-3xl"
+                >
+                  Shipping container house
+                </p>
+                <p class="px-5 text-black md:px-0 md:mt-5">
+                  <button class="bg-white px-3 py-2 rounded-full font-bold">
+                    View more
+                  </button>
+                </p>
+              </div>
+            </div>
+
+            <!-- Image two -->
+            <div class="relative w-full h-40 md:h-72 rounded-lg group">
+              <img
+                src="img/explore-2.jpg"
+                alt=""
+                class="w-full object-cover h-full rounded-lg"
+              />
+              <!-- content -->
+              <div
+                class="absolute top-0 rounded-lg bg-black/50 w-full h-full text-white md:p-9 md:pt-20 lg:pt-32 lg:p-0 lg:px-8 group-hover:bg-black/70 cursor-pointer"
+              >
+                <p class="p-4 text-3xl capitalize font-medium md:p-0">
+                  Nail Stamping
+                </p>
+                <p class="px-5 text-black md:px-0 md:mt-5 lg:mt-10 xl:mt-15">
+                  <button class="bg-white px-5 py-2 rounded-full font-bold">
+                    Make
+                  </button>
+                </p>
+              </div>
+            </div>
+            <!-- Image three -->
+            <div
+              class="relative w-full h-40 md:h-72 bg-purple-400 rounded-lg group"
+            >
+              <img
+                src="img/explore-3.jpg"
+                alt=""
+                class="w-full object-cover h-full rounded-lg"
+              />
+              <!-- content -->
+              <div
+                class="absolute top-0 rounded-lg bg-black/50 w-full h-full text-white md:p-9 md:pt-20 lg:pt-32 lg:p-0 lg:px-8 group-hover:bg-black/70 cursor-pointer"
+              >
+                <p
+                  class="p-4 text-3xl capitalize font-medium md:p-0 lg:text-2xl xl:text-3xl"
+                >
+                  Hanging Plants
+                </p>
+                <p class="px-5 text-black md:px-0 md:mt-5 lg:mt-10 xl:mt-15">
+                  <button class="bg-white px-6 py-2 rounded-full font-bold">
+                    Try
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- image section -->
+      <section
+        class="md:mt-10 w-full md:w-full mx-auto md:space-x-2 lg:w-11/12 xl:w-full lg:mt-30"
+      >
+        <!-- global section container -->
+        <div class="">
+          <!-- Feature text div -->
+          <!-- text box container -->
+          <div class="">
+            <!-- textbox -->
+            <div class="text-center mb-3">
+              <h5 class="text-xl font-medium">Explore popular ideas</h5>
+            </div>
+          </div>
+
+          <!-- image box container -->
+          <div
+            class="image-box columns-2 xl:columns-6 lg:columns-5 md:columns-4 px-2 space-y-2"
+          ></div>
+        </div>
+      </section>
+
+      <!--Footer and mobile nav -->
+      <footer
+        class="md:hidden w-full fixed bottom-0 inline-block bg-black h-20"
+      >
+        <div class="flex items-center justify-evenly bg-white w-full h-full">
+          <div class="">
+            <a href="#" class=""
+              ><ion-icon
+                name="home-sharp"
+                class="text-4xl text-gray-500"
+              ></ion-icon
+            ></a>
+          </div>
+          <div class="">
+            <a href="#" class=""
+              ><ion-icon
+                name="search-sharp"
+                class="text-4xl text-gray-500"
+              ></ion-icon
+            ></a>
+          </div>
+          <div class="">
+            <a href="#" class=""
+              ><ion-icon
+                name="chatbubble-ellipses-sharp"
+                class="text-4xl text-gray-500"
+              ></ion-icon
+            ></a>
+          </div>
+          <div class="">
+            <a href="#" class=""
+              ><ion-icon
+                name="person-circle-sharp"
+                class="text-4xl text-gray-500"
+              ></ion-icon
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- icons script -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
