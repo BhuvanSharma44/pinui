@@ -14,11 +14,18 @@
   </head>
   <body>
     <!-- global container -->
-    <div class="">
+    <div class="relative w-full h-full">
+      <!-- covering -->
+      <div class="z-1 h-full w-full absolute z-30 hidden">
+        <!-- overlay -->
+        <div class="absolute top-0 left-0 bg-black/50 w-full h-full"></div>
+        <!-- search options -->
+        <div class=""></div>
+      </div>
       <!-- NAVIGATION Desktop-->
-      <div class="bg-white w-full fixed top-0 z-40">
+      <div class="bg-white w-full fixed top-0 z-50">
         <header class="min-h-16 hidden md:block w-full">
-          <nav class="flex items-center justify-between p-6">
+          <nav class="relative flex items-center justify-between p-6">
             <!-- LOGO -->
             <a href="#">
               <img
@@ -29,39 +36,251 @@
             <div class="">
               <a
                 href=""
-                class="font-bold lg:bg-black lg:text-white py-3 px-6 rounded-full"
+                class="font-bold lg:bg-black lg:text-white py-3 px-6 rounded-full text-md"
                 >Home</a
               >
             </div>
             <div class="">
-              <a href="" class="font-bold md:hidden lg:block">Explore</a>
+              <a href="" class="font-bold md:hidden lg:block text-md"
+                >Explore</a
+              >
             </div>
             <div class="">
-              <a href="" class="font-bold md:hidden lg:block">Create</a>
+              <a href="" class="font-bold md:hidden lg:block text-md">Create</a>
             </div>
 
             <!-- input feild -->
 
             <div
-              class="relative flex items-center bg-gray-200 p-3 w-[66%] xl:w-2/3 rounded-full focus-within:shadow-3xl hover:bg-gray-300 lg:w-2/5"
+              class="relative group flex items-center w-[66%] bg-gray-200 p-3 xl:w-3/5 rounded-full focus-within:shadow-3xl hover:bg-gray-300 lg:w-3/6"
             >
               <!-- icon -->
               <ion-icon
                 name="search"
-                class="text-2xl text-gray-400 font-bold"
+                class="text-2xl text-gray-400 font-bold group-focus-within:hidden"
               ></ion-icon>
               <input
                 type="text"
                 placeholder="Search"
                 class="w-full bg-transparent px-2 border-none outline-none"
               />
-              <!-- bg-transparent rounded-full h-8 w-full px-5 py-4 border-none outline-none -->
+              <div
+                class="gogo-bar absolute overflow-y-auto bg-white w-full max-h-96 left-0 top-14 rounded-b-lg hidden group-focus-within:block"
+              >
+                <div class="my-4 ml-3">
+                  <!-- content -->
+                  <p class="font-semibold">Ideas for you</p>
+                </div>
+                <!-- images container-->
+                <div class="xl:columns-3 md:columns-2 px-2 space-y-4">
+                  <!-- image and content 1 -->
+                  <div
+                    class="flex items-center max-w-72 h-28 rounded-lg bg-gray-100 hover:bg-gray-200"
+                  >
+                    <img
+                      src="https://i.pinimg.com/236x/3d/a3/e0/3da3e077cfe257d7d8eb5a07e0e96705.jpg"
+                      alt=""
+                      class="w-32 h-28 object-cover rounded-l-lg"
+                    />
+                    <div class="ml-2">
+                      <p class="text-black ml-2 font-semibold">
+                        Krishna The Supreme Personality
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- 2 -->
+                  <div
+                    class="flex items-center max-w-72 h-28 rounded-lg bg-gray-100 hover:bg-gray-200"
+                  >
+                    <img
+                      src="https://i.pinimg.com/236x/3d/a3/e0/3da3e077cfe257d7d8eb5a07e0e96705.jpg"
+                      alt=""
+                      class="w-32 h-28 object-cover rounded-l-lg"
+                    />
+                    <div class="ml-2">
+                      <p class="text-black ml-2 font-semibold">
+                        Krishna The Supreme Personality
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div
+                    class="flex items-center max-w-72 h-28 rounded-lg bg-gray-100 hover:bg-gray-200"
+                  >
+                    <img
+                      src="https://i.pinimg.com/236x/3d/a3/e0/3da3e077cfe257d7d8eb5a07e0e96705.jpg"
+                      alt=""
+                      class="w-32 h-28 object-cover rounded-l-lg"
+                    />
+                    <div class="ml-2">
+                      <p class="text-black ml-2 font-semibold">
+                        Krishna The Supreme Personality
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                  <div
+                    class="flex items-center max-w-72 h-28 rounded-lg bg-gray-100 hover:bg-gray-200"
+                  >
+                    <img
+                      src="https://i.pinimg.com/236x/3d/a3/e0/3da3e077cfe257d7d8eb5a07e0e96705.jpg"
+                      alt=""
+                      class="w-32 h-28 object-cover rounded-l-lg"
+                    />
+                    <div class="ml-2">
+                      <p class="text-black ml-2 font-semibold">
+                        Krishna The Supreme Personality
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 5 -->
+                  <div
+                    class="flex items-center max-w-72 h-28 rounded-lg bg-gray-100 hover:bg-gray-200"
+                  >
+                    <img
+                      src="https://i.pinimg.com/236x/3d/a3/e0/3da3e077cfe257d7d8eb5a07e0e96705.jpg"
+                      alt=""
+                      class="w-32 h-28 object-cover rounded-l-lg"
+                    />
+                    <div class="ml-2">
+                      <p class="text-black ml-2 font-semibold">
+                        Krishna The Supreme Personality
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 6 -->
+                  <div
+                    class="flex items-center max-w-72 h-28 rounded-lg bg-gray-100 hover:bg-gray-200"
+                  >
+                    <img
+                      src="https://i.pinimg.com/236x/3d/a3/e0/3da3e077cfe257d7d8eb5a07e0e96705.jpg"
+                      alt=""
+                      class="w-32 h-28 object-cover rounded-l-lg"
+                    />
+                    <div class="ml-2">
+                      <p class="text-black ml-2 font-semibold">
+                        Krishna The Supreme Personality
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="my-4 ml-3">
+                  <!-- content -->
+                  <p class="font-semibold">Popular on pinterest</p>
+                </div>
+                <div class="xl:columns-3 md:columns-2 px-2 space-y-4">
+                  <!-- image and content 1 -->
+                  <div
+                    class="flex items-center max-w-72 h-28 rounded-lg bg-gray-100 hover:bg-gray-200"
+                  >
+                    <img
+                      src="https://i.pinimg.com/236x/3d/a3/e0/3da3e077cfe257d7d8eb5a07e0e96705.jpg"
+                      alt=""
+                      class="w-32 h-28 object-cover rounded-l-lg"
+                    />
+                    <div class="ml-2">
+                      <p class="text-black ml-2 font-semibold">
+                        Krishna The Supreme Personality
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- 2 -->
+                  <div
+                    class="flex items-center max-w-72 h-28 rounded-lg bg-gray-100 hover:bg-gray-200"
+                  >
+                    <img
+                      src="https://i.pinimg.com/236x/3d/a3/e0/3da3e077cfe257d7d8eb5a07e0e96705.jpg"
+                      alt=""
+                      class="w-32 h-28 object-cover rounded-l-lg"
+                    />
+                    <div class="ml-2">
+                      <p class="text-black ml-2 font-semibold">
+                        Krishna The Supreme Personality
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div
+                    class="flex items-center max-w-72 h-28 rounded-lg bg-gray-100 hover:bg-gray-200"
+                  >
+                    <img
+                      src="https://i.pinimg.com/236x/3d/a3/e0/3da3e077cfe257d7d8eb5a07e0e96705.jpg"
+                      alt=""
+                      class="w-32 h-28 object-cover rounded-l-lg"
+                    />
+                    <div class="ml-2">
+                      <p class="text-black ml-2 font-semibold">
+                        Krishna The Supreme Personality
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                  <div
+                    class="flex items-center max-w-72 h-28 rounded-lg bg-gray-100 hover:bg-gray-200"
+                  >
+                    <img
+                      src="https://i.pinimg.com/236x/3d/a3/e0/3da3e077cfe257d7d8eb5a07e0e96705.jpg"
+                      alt=""
+                      class="w-32 h-28 object-cover rounded-l-lg"
+                    />
+                    <div class="ml-2">
+                      <p class="text-black ml-2 font-semibold">
+                        Krishna The Supreme Personality
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 5 -->
+                  <div
+                    class="flex items-center max-w-72 h-28 rounded-lg bg-gray-100 hover:bg-gray-200"
+                  >
+                    <img
+                      src="https://i.pinimg.com/236x/3d/a3/e0/3da3e077cfe257d7d8eb5a07e0e96705.jpg"
+                      alt=""
+                      class="w-32 h-28 object-cover rounded-l-lg"
+                    />
+                    <div class="ml-2">
+                      <p class="text-black ml-2 font-semibold">
+                        Krishna The Supreme Personality
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 6 -->
+                  <div
+                    class="flex items-center max-w-72 h-28 rounded-lg bg-gray-100 hover:bg-gray-200"
+                  >
+                    <img
+                      src="https://i.pinimg.com/236x/3d/a3/e0/3da3e077cfe257d7d8eb5a07e0e96705.jpg"
+                      alt=""
+                      class="w-32 h-28 object-cover rounded-l-lg"
+                    />
+                    <div class="ml-2">
+                      <p class="text-black ml-2 font-semibold">
+                        Krishna The Supreme Personality
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- text feild -->
+            <!-- input text active box -->
             <div
-              class="absolute w-1/2 h-2/4 rounded-b-xl bg-white top-24 left-60 lg:h-3/4 lg:w-3/4 lg:left-[15rem] hidden"
+              class="absolute mt-48 w-[50%] overflow-hidden rounded-md bg-red-500 hidden"
             >
-              <!-- <span class="inline-block mx-4 mt-4">Text</span> -->
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Doloremque excepturi fuga minus pariatur fugiat necessitatibus,
+              ipsam cum voluptates, error nostrum deleniti. Quasi nemo soluta,
+              quia, at eius pariatur molestiae amet totam, maxime ea provident
+              culpa ut eaque eos quam. Itaque ut dolorem dignissimos ratione
+              doloremque omnis aspernatur voluptatibus officia eos alias hic
+              similique nisi odio placeat blanditiis molestias obcaecati et
+              doloribus, quaerat tempora aliquid! Ea, accusantium. Atque ipsam
+              laborum odit. Hic harum nesciunt nemo, similique placeat aut
+              temporibus debitis itaque vel veritatis enim illum error excepturi
+              officiis iusto nulla fugiat id dolorem voluptate assumenda fugit
+              quibusdam, ea saepe dolor.
             </div>
 
             <!-- icons -->
@@ -69,7 +288,7 @@
               <a href="font-bold"
                 ><ion-icon
                   name="notifications"
-                  class="relative text-4xl text-gray-500 hover:bg-gray-300 p-2 rounded-full"
+                  class="relative text-3xl text-gray-500 hover:bg-gray-300 p-2 rounded-full"
                 ></ion-icon
               ></a>
             </div>
@@ -79,7 +298,7 @@
               <a href="font-bold"
                 ><ion-icon
                   name="chatbubble-ellipses-sharp"
-                  class="text-4xl text-gray-500 hover:bg-gray-300 p-2 rounded-full"
+                  class="text-3xl text-gray-500 hover:bg-gray-300 p-2 rounded-full"
                 ></ion-icon
               ></a>
             </div>
@@ -89,24 +308,16 @@
               <a href="font-bold"
                 ><ion-icon
                   name="person-circle-sharp"
-                  class="text-4xl text-gray-500 hover:bg-gray-300 p-2 rounded-full"
+                  class="text-3xl text-gray-500 hover:bg-gray-300 p-2 rounded-full"
                 ></ion-icon
               ></a>
             </div>
           </nav>
-
-          <!-- covering -->
-          <div class="">
-            <!-- overlay -->
-            <div class="bg-black/50 w-full h-screen hidden"></div>
-            <!-- search options -->
-            <div class=""></div>
-          </div>
         </header>
         <!-- image -->
       </div>
 
-      <section id="explore" class="md:mt-32 py-5 max-h-screen">
+      <section id="explore" class="relative md:mt-32 py-5 max-h-screen">
         <!-- Image box and content -->
         <div class="">
           <!-- heading -->
@@ -118,7 +329,7 @@
 
           <!-- Images-container -->
           <div
-            class="flex flex-col md:mt-10 md:flex-row w-3/4 md:w-full mx-auto py-10 space-y-4 md:px-2 md:space-y-0 md:space-x-2 lg:w-full xl:w-5/6 lg:mt-30"
+            class="flex flex-col md:mt-10 md:flex-row w-3/4 md:w-full mx-auto py-10 space-y-4 md:px-2 md:space-y-0 md:space-x-2 lg:w-full xl:w-[90%] lg:mt-30"
           >
             <!-- Image one -->
             <div class="relative w-full h-40 md:h-72 rounded-lg group">
@@ -129,15 +340,17 @@
               />
               <!-- content -->
               <div
-                class="absolute top-0 rounded-lg bg-black/50 w-full h-full text-white md:p-9 md:pt-20 lg:pt-32 lg:p-0 lg:px-8 group-hover:bg-black/70 cursor-pointer"
+                class="absolute top-0 rounded-lg bg-black/50 w-full h-full text-white lg:p-0 group-hover:bg-black/70 cursor-pointer"
               >
                 <p
-                  class="p-4 text-3xl capitalize font-medium md:p-0 lg:text-2xl xl:text-3xl"
+                  class="mt-8 ml-4 md:ml-0 md:text-2xl text-2xl capitalize font-medium md:p-0 lg:text-2xl xl:text-3xl xl w-full lg:mt-36 lg:pl-5 md:mt-28 md:pl-5"
                 >
                   Shipping container house
                 </p>
                 <p class="px-5 text-black md:px-0 md:mt-5">
-                  <button class="bg-white px-3 py-2 rounded-full font-bold">
+                  <button
+                    class="bg-white px-3 py-2 rounded-full font-bold lg:ml-5 md:ml-5 mt-3 md:mt-0"
+                  >
                     View more
                   </button>
                 </p>
@@ -153,13 +366,17 @@
               />
               <!-- content -->
               <div
-                class="absolute top-0 rounded-lg bg-black/50 w-full h-full text-white md:p-9 md:pt-20 lg:pt-32 lg:p-0 lg:px-8 group-hover:bg-black/70 cursor-pointer"
+                class="absolute top-0 rounded-lg bg-black/50 w-full h-full text-white lg:p-0 group-hover:bg-black/70 cursor-pointer"
               >
-                <p class="p-4 text-3xl capitalize font-medium md:p-0">
+                <p
+                  class="mt-8 ml-4 md:ml-0 md:text-2xl text-2xl capitalize font-medium md:p-0 lg:text-2xl xl:text-3xl w-full lg:mt-36 lg:pl-5 md:mt-32 md:pl-5"
+                >
                   Nail Stamping
                 </p>
-                <p class="px-5 text-black md:px-0 md:mt-5 lg:mt-10 xl:mt-15">
-                  <button class="bg-white px-5 py-2 rounded-full font-bold">
+                <p class="px-5 text-black md:px-0 md:mt-8">
+                  <button
+                    class="bg-white px-5 py-2 rounded-full font-bold lg:ml-5 md:ml-5 mt-3 md:mt-0"
+                  >
                     Make
                   </button>
                 </p>
@@ -176,15 +393,17 @@
               />
               <!-- content -->
               <div
-                class="absolute top-0 rounded-lg bg-black/50 w-full h-full text-white md:p-9 md:pt-20 lg:pt-32 lg:p-0 lg:px-8 group-hover:bg-black/70 cursor-pointer"
+                class="absolute top-0 rounded-lg bg-black/50 w-full h-full text-white lg:p-0 group-hover:bg-black/70 cursor-pointer"
               >
                 <p
-                  class="p-4 text-3xl capitalize font-medium md:p-0 lg:text-2xl xl:text-3xl"
+                  class="mt-8 ml-4 md:ml-0 md:text-2xl text-2xl capitalize font-medium md:p-0 lg:text-2xl xl:text-3xl w-full lg:mt-36 lg:pl-5 md:mt-32 md:pl-5"
                 >
                   Hanging Plants
                 </p>
-                <p class="px-5 text-black md:px-0 md:mt-5 lg:mt-10 xl:mt-15">
-                  <button class="bg-white px-6 py-2 rounded-full font-bold">
+                <p class="px-5 text-black md:px-0 md:mt-8">
+                  <button
+                    class="bg-white px-6 py-2 rounded-full font-bold lg:ml-5 md:ml-5 mt-3 md:mt-0"
+                  >
                     Try
                   </button>
                 </p>
@@ -196,7 +415,7 @@
 
       <!-- image section -->
       <section
-        class="md:mt-10 w-full md:w-full mx-auto md:space-x-2 lg:w-11/12 xl:w-full lg:mt-30"
+        class="md:mt-10 w-full md:w-full mx-auto md:space-x-2 lg:w-11/12 xl:w-full lg:mt-30 z-10"
       >
         <!-- global section container -->
         <div class="">
