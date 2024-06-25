@@ -1,11 +1,11 @@
-function showBw() {
-  let width = window.innerWidth;
+// function showBw() {
+//   let width = window.innerWidth;
 
-  document.querySelector("h1").innerText = width + "px";
-}
+//   document.querySelector("h1").innerText = width + "px";
+// }
 
-window.onload = showBw;
-window.onresize = showBw;
+// window.onload = showBw;
+// window.onresize = showBw;
 
 let images = [
   {
@@ -455,35 +455,26 @@ function addImage() {
 }
 addImage();
 
-/*
+// function to add the overlay
 
-<!-- image-one -->
-        <!-- image -->
-        <div class="md:w-72 relative group break-inside-avoid">
-          <img
-            src="https://images.unsplash.com/photo-1591824765678-3c8f82e58630?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHJhZGhhJTIwYW5kJTIwa3Jpc2huYXxlbnwwfHwwfHx8MA%3D%3D"
-            alt=""
-          />
-          <!-- overlay -->
-          <div
-            class="absolute w-full h-full bottom-0 top-0 left-0 right-0 bg-black"
-          >
-            <!-- content container -->
-            <div class="">
-              <!--top content -->
+let input = document.querySelector("#input");
+let overlay = document.querySelector("#overlay");
+let gogo = document.querySelector(".gogoBar");
+function control(thing, what) {
+  input.addEventListener(thing, function () {
+    overlay.classList.toggle(what);
+  });
+}
+control("focus", "hidden");
+control("blur", "hidden");
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && document.hasFocus) {
+    input.blur();
+  }
+});
 
-              <div class="">
-                <h1 class="text-white">Image name</h1>
-                <p class="text-white">Image likes</p>
-              </div>
-
-              <!-- bottom content -->
-              <div class="w-full h-55 bg-blue-300 mt-36">
-                <p class="text-white">Image name</p>
-                <p class="text-white">Image likes</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-*/
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !overlay.classList.contains("hidden")) {
+    overlay.classList.add("hidden");
+  }
+});

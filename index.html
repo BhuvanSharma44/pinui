@@ -16,7 +16,7 @@
     <!-- global container -->
     <div class="relative w-full h-full">
       <!-- covering -->
-      <div class="z-1 h-full w-full absolute z-30 hidden">
+      <div id="overlay" class="z-1 h-full w-full absolute z-30 hidden">
         <!-- overlay -->
         <div class="absolute top-0 left-0 bg-black/50 w-full h-full"></div>
         <!-- search options -->
@@ -63,9 +63,10 @@
                 type="text"
                 placeholder="Search"
                 class="w-full bg-transparent px-2 border-none outline-none"
+                id="input"
               />
               <div
-                class="gogo-bar absolute overflow-y-auto bg-white w-full max-h-96 left-0 top-14 rounded-b-lg hidden group-focus-within:block"
+                class="gogoBar absolute overflow-y-auto bg-white w-full max-h-96 left-0 top-14 rounded-b-lg hidden group-focus-within:block"
               >
                 <div class="my-4 ml-3">
                   <!-- content -->
